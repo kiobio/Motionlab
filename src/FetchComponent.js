@@ -1,10 +1,11 @@
-import { useEffect, useState } from "react"
-import Form from "./Form";
+import { useEffect, useState } from "react";
+import FormComponent from './FormComponent'
 
 
 
 
-function FirstPage(){
+
+function FetchComponent(){
     const [values, setValues] = useState({
         name:"",
         email:""
@@ -70,10 +71,11 @@ function FirstPage(){
 
     return(
         <div>
+            
             {firstResponse ?
             <div> 
             <h2>{firstResponse.nextStepText}</h2>
-            <Form
+            <FormComponent
             postApi={postApi}
             email={email}
             setName={setName}
@@ -92,4 +94,4 @@ function FirstPage(){
         </div>
     )
 }
-export default FirstPage
+export default FetchComponent

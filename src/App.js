@@ -1,12 +1,13 @@
 import './App.css';
-import FirstPage from './FirstPage';
+import FetchComponent from './FetchComponent';
+
 
 
 function App() {
   return (
     <div>
       
-      <FirstPage/>
+      <FetchComponent/>
     </div>
   );
 }

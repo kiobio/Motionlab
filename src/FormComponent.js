@@ -2,7 +2,7 @@
 
 
 
-function Form(props){
+function FormComponent(props){
 
     return(
         <div>
@@ -25,4 +25,4 @@ function Form(props){
         </div>
     )
 }
-export default Form
+export default FormComponent
